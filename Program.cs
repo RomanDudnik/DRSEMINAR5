@@ -2,7 +2,7 @@
 //[345, 897, 568, 234] -> 2
 
 
-int [] CreateRandomArray (int size)   //метод создания массива с рандом эл-ами
+int [] ThreeDigRandomArray (int size)   //метод создания массива с рандом трехзначными эл-ами
 {
     int[] newArray = new int [size];
 
@@ -30,7 +30,7 @@ int SumEvenNum(int[] array)
 Console.WriteLine("Input size if array: ");
 int arraySize = Convert.ToInt32(Console.ReadLine());
 
-int[] createArray = CreateRandomArray(arraySize);
+int[] createArray = ThreeDigRandomArray(arraySize);
 ShowArray(createArray);
 
 int even = SumEvenNum(createArray);
