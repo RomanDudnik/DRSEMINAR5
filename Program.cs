@@ -1,8 +1,9 @@
-﻿//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+﻿//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами.
+// Напишите программу, которая покажет количество чётных чисел в массиве.
 //[345, 897, 568, 234] -> 2
 
 /*
-int [] ThreeDigRandomArray (int size)   //метод создания массива с рандом трехзначными эл-ами
+int [] ThreeDigRandomArray (int size)   
 {
     int[] newArray = new int [size];
 
@@ -11,7 +12,7 @@ int [] ThreeDigRandomArray (int size)   //метод создания масси
     return newArray;
 }
 
-void ShowArray (int [] array)     // метод демонстрации массива
+void ShowArray (int [] array)     
 {
     for(int i = 0; i < array.Length; i++)
         Console.Write(array[i] + " ");
@@ -47,8 +48,8 @@ Console.WriteLine($"Summ of even elements is {evenNum} ");
 //[3, 7, 23, 12] -> 19
 //[-4, -6, 89, 6] -> 0
 
-
-int [] RandomElemArray (int size, int minValue, int maxValue)   //метод создания массива с рандом эл-ами
+/*
+int [] RandomElemArray (int size, int minValue, int maxValue)   
 {
     int[] newArray = new int [size];
 
@@ -57,14 +58,14 @@ int [] RandomElemArray (int size, int minValue, int maxValue)   //метод с�
     return newArray;
 }
 
-void ShowArray (int [] array)     // метод демонстрации массива
+void ShowArray (int [] array)     
 {
     for(int i = 0; i < array.Length; i++)
         Console.Write(array[i] + " ");
     Console.WriteLine();
 }
 
-int SumOddNum(int[] array)
+int SumOddElements(int[] array)
 {
     int sumOdd = 0;
     for (int i = 0; i < array.Length; i++)
@@ -82,9 +83,9 @@ int minSegment = Convert.ToInt32 (Console.ReadLine());
 Console.WriteLine("Enter the maximum segment of your array : ");
 int maxSegment = Convert.ToInt32 (Console.ReadLine());
 
-int [] array = RandomElemArray(lenght, minSegment, maxSegment);
-ShowArray(array);
-int resultOddSum = SumOddNum(array);
+int [] newArray = RandomElemArray(lenght, minSegment, maxSegment);
+ShowArray(newArray);
+int resultOddSum = SumOddElements(newArray);
 Console.WriteLine($"The sum of odd array elements is {resultOddSum} ");
 */
 
