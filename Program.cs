@@ -7,7 +7,7 @@ int [] ThreeDigRandomArray (int size)   //метод создания масси
     int[] newArray = new int [size];
 
     for (int i = 0; i < size; i++)
-        newArray[i] = new Random().Next(99, 1000);
+        newArray[i] = new Random().Next(100, 1000);
     return newArray;
 }
 
@@ -21,10 +21,14 @@ void ShowArray (int [] array)     // метод демонстрации мас�
 int SumEvenNum(int[] array)
 {
     int SumEven = 0;
+    int number = 0;
     for (int i = 0; i < array.Length; i++)
         if (array[i] % 2 == 0)
+        {
             SumEven += array[i];
-    return SumEven;
+            number++;
+        }
+    return number;
 }
 
 Console.WriteLine("Input size if array: ");
@@ -33,12 +37,13 @@ int arraySize = Convert.ToInt32(Console.ReadLine());
 int[] createArray = ThreeDigRandomArray(arraySize);
 ShowArray(createArray);
 
-int even = SumEvenNum(createArray);
-Console.WriteLine($"Summ of even elements is {even} ");
+int evenNum = SumEvenNum(createArray);
+Console.WriteLine($"Summ of even elements is {evenNum} ");
 */
 
 
-//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+//Задача 36: Задайте одномерный массив, заполненный случайными числами.
+// Найдите сумму элементов, стоящих на нечётных позициях.
 //[3, 7, 23, 12] -> 19
 //[-4, -6, 89, 6] -> 0
 
@@ -81,7 +86,7 @@ int [] array = RandomElemArray(lenght, minSegment, maxSegment);
 ShowArray(array);
 int resultOddSum = SumOddNum(array);
 Console.WriteLine($"The sum of odd array elements is {resultOddSum} ");
-
+*/
 
 
 
