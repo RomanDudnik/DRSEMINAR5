@@ -21,12 +21,10 @@ void ShowArray (int [] array)
 
 int SumEvenNum(int[] array)
 {
-    int SumEven = 0;
     int count = 0;
     for (int i = 0; i < array.Length; i++)
         if (array[i] % 2 == 0)
         {
-            SumEven += array[i];
             count++;
         }
     return count;
@@ -39,7 +37,7 @@ int[] createArray = ThreeDigRandomArray(arraySize);
 ShowArray(createArray);
 
 int evenNum = SumEvenNum(createArray);
-Console.WriteLine($"Summ of even elements is {evenNum} ");
+Console.WriteLine($"This array has {evenNum} even elements ");
 */
 
 
@@ -69,7 +67,7 @@ int SumOddElements(int[] array)
 {
     int sumOdd = 0;
     for (int i = 0; i < array.Length; i++)
-        if (array[i] % 2 != 0)
+        if (i % 2 != 0)
             sumOdd += array[i];
     return sumOdd;
 }
@@ -212,5 +210,6 @@ ShowArray(newArray);
 double diffMaxMin = diffElemArray(newArray);
 
 
-Console.WriteLine($"The difference between max and having an array is {diffMaxMin} ");
+//Console.WriteLine($"The difference between max and having an array is {diffMaxMin}" );
+Console.WriteLine($"The difference between max and having an array is {Math.Round(diffMaxMin, 3)}" );
 */
